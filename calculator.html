@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+ <script>
+ var firstNumber = prompt("Enter the first number");
+ var operator = prompt("Enter operator (+, -, *, /)");
+ var secondNumber = prompt("Enter the second number");
+ var total;
+
+ // Perform the calculation based on the operator
+ switch(operator) {
+   case '+':
+     total = Number(firstNumber) + Number(secondNumber);
+     break;
+   case '-':
+     total = Number(firstNumber) - Number(secondNumber);
+     break;
+   case '*':
+     total = Number(firstNumber) * Number(secondNumber);
+     break;
+   case '/':
+     total = Number(firstNumber) / Number(secondNumber);
+     break;
+   default:
+     alert("Invalid operator");
+     break;
+ }
+
+ alert("Result: " + total);
+ </script>
+</body>
+</html>
